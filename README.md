@@ -1,4 +1,6 @@
-# 📦 Commands used to install MySQL-Server
+# 🚀 Commands used to install MySQL-Server
+
+## 1. Install MySQL-Server
 
 🔄 **Update package list:**
 
@@ -42,27 +44,29 @@ sudo apt install dpkg
 
 📦 **Install MySQL APT configuration:**
 ```bash
-$ sudo dpkg -i mysql-apt-config_0.8.25-1_all.deb
+sudo dpkg -i mysql-apt-config_0.8.25-1_all.deb
 ```
 
 🔄 **If necessary, reconfigure MySQL APT:**
 ```bash
-$ sudo dpkg-reconfigure mysql-apt-config
+sudo dpkg-reconfigure mysql-apt-config
 ```
 
 🔄 **Update package list:**
 ```bash
-$ sudo apt update
+sudo apt update
 ```
 
 🔝 **Update system packages:**
 ```bash
-$ sudo apt upgrade
+sudo apt upgrade
 ```
 
 🔧 **Install MySQL Workbench Community:**
 ```bash
-$ sudo apt install mysql-workbench-community
+sudo apt install mysql-workbench-community
+# or
+sudo snap install mysql-workbench-community
 ```
 
 ## 🚀 IMPORTANTS COMMANDS 
@@ -72,8 +76,6 @@ $ sudo apt install mysql-workbench-community
     ```bash
     sudo systemctl status mysql
     ```
-    
-    Esto te mostrará si el servicio MySQL está activo (corriendo) o detenido.
     
 2. **Start the MySQL service**:
     
